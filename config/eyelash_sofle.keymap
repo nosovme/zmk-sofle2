@@ -10,9 +10,8 @@
 #include <behaviors/unicode.dtsi>
 
 &uc {
-  default-mode = <UC_MODE_LINUX>;
+  default-mode = <UC_MODE_LINUX_ALT>;
   minimum-length = <4>;
-  linux-key = <LC(LS(U))>;
 };
 
 /*
