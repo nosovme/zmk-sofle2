@@ -82,7 +82,7 @@ layers:
   - Ctl+Q
   - Ctl+W
   - $$mdi:keyboard-esc$$
-  - '&LC(LS(TAB))'
+  - Ctl+Sft+$$mdi:keyboard-tab$$
   - Ctl+$$mdi:keyboard-tab$$
   - Ctl+T
   - {t: '$$mdi:transfer$$', type: trans}
@@ -127,7 +127,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-tab-reverse$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   '2':
@@ -195,7 +195,3 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-combos:
-- p: [55, 4]
-  k: Alt+F4
-  l: [LAYER0]
