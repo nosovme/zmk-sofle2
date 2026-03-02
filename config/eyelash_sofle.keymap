@@ -87,7 +87,7 @@
 &trans    &kp Q      &kp W         &kp E         &kp R   &kp T        &kp LA(F4)   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp LEFT_BRACKET
 &kp LSHFT    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LA(F4)   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
 &kp LCTRL   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp LA(F4)  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &trans
-&trans  &mo 2  &alt_delete LALT DELETE  &layer_two_backspace 1 BACKSPACE   &shift_space LSHIFT SPACE  &kp LEFT_GUI    &kp LA(F4)  &lang_switch_ctrl &kp LC(SEMI) LG(SPACE)  &kp ENTER  &kp TAB      &kp RIGHT_SHIFT  &kp DELETE
+&trans  &mo 2  &alt_delete LALT DELETE  &layer_two_backspace 1 BACKSPACE   &shift_space LSHIFT SPACE  &kp LEFT_GUI    &kp LA(F4)  &lang_switch_ctrl LC(SEMI) LG(SPACE)  &kp ENTER  &kp TAB      &kp RIGHT_SHIFT  &kp DELETE
             >; 
         
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
