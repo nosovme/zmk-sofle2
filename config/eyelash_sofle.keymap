@@ -7,13 +7,6 @@
 
 #include <input/processors.dtsi>
 
-#include <behaviors/unicode.dtsi>
-
-&uc {
-  default-mode = <UC_MODE_LINUX_ALT>;
-  minimum-length = <4>;
-};
-
 /*
 
    &mmv_input_listener {
@@ -94,7 +87,7 @@
 &trans    &kp Q      &kp W         &kp E         &kp R   &kp T        &kp LA(F4)   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp LEFT_BRACKET
 &kp LSHFT    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LA(F4)   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
 &kp LCTRL   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp LA(F4)  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &trans
-&trans  &mo 2  &alt_delete LALT DELETE  &layer_two_backspace 1 BACKSPACE   &shift_space LSHIFT SPACE  &kp LEFT_GUI    &kp LA(F4)  &tog 3  &kp ENTER  &kp TAB      &kp RIGHT_SHIFT  &kp DELETE
+&trans  &mo 2  &alt_delete LALT DELETE  &layer_two_backspace 1 BACKSPACE   &shift_space LSHIFT SPACE  &kp LEFT_GUI    &kp LA(F4)  &lang_switch_ctrl LCTRL LG(SPACE)  &kp ENTER  &kp TAB      &kp RIGHT_SHIFT  &kp DELETE
             >; 
         
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -107,7 +100,7 @@
 &kp LC(Q)      &kp LC(W)        &kp ESC      &kp LC(LS(TAB))     &kp LC(TAB)        &kp LC(T)           &trans   &trans        &kp HOME         &kp UP      &kp END   &kp MINUS         &kp EQUAL
 &trans      &kp LC(A)     &kp LA(V)     &kp LCTRL        &kp LSHFT         &trans           &trans   &trans        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &kp LC(LS(Z)) &kp LC(Z)     &kp LC(C)       &kp LC(X)       &kp LC(V)         &kp LC(SLASH)             &trans  &rgb_ug RGB_BRI  &kp PG_UP         &kp INSERT  &kp PG_DN    &kp BACKSLASH           &trans
-&trans  &trans           &uc 0x0430 0x0410          &uc 0x0431 0x0411          &trans           &kp LA(F4)            &trans        &trans           &trans           &trans      &trans     &trans
+&trans  &trans           &trans          &trans          &trans           &kp LA(F4)            &trans        &trans           &trans           &trans      &trans     &trans
             >;
  
             display-name = "layer1";
@@ -124,58 +117,6 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-        };
-
-        layer3 {
-            bindings = <
-        &trans &trans &trans &trans &trans &trans &kp LA(F4) &trans &trans &trans &trans &trans &trans
-        
-        &trans
-        &uc 0x0439 0x0419   /* й */
-        &uc 0x0446 0x0426   /* ц */
-        &uc 0x0443 0x0423   /* у */
-        &uc 0x043A 0x041A   /* к */
-        &uc 0x0435 0x0415   /* е */
-        &kp LA(F4)
-        &uc 0x043D 0x041D   /* н */
-        &uc 0x0433 0x0413   /* г */
-        &uc 0x0448 0x0428   /* ш */
-        &uc 0x0449 0x0429   /* щ */
-        &uc 0x0437 0x0417   /* з */
-        &uc 0x0445 0x0425   /* х */
-        
-        &kp LSHFT
-        &uc 0x0444 0x0424   /* ф */
-        &uc 0x044B 0x042B   /* ы */
-        &uc 0x0432 0x0412   /* в */
-        &uc 0x0430 0x0410   /* а */
-        &uc 0x043F 0x041F   /* п */
-        &kp LA(F4)
-        &uc 0x0440 0x0420   /* р */
-        &uc 0x043E 0x041E   /* о */
-        &uc 0x043B 0x041B   /* л */
-        &uc 0x0434 0x0414   /* д */
-        &uc 0x0436 0x0416   /* ж */
-        &uc 0x044D 0x042D   /* э */
-        
-        &kp LCTRL
-        &uc 0x044F 0x042F   /* я */
-        &uc 0x0447 0x0427   /* ч */
-        &uc 0x0441 0x0421   /* с */
-        &uc 0x043C 0x041C   /* м */
-        &uc 0x0438 0x0418   /* и */
-        &kp LA(F4)
-        &uc 0x0442 0x0422   /* т */
-        &uc 0x044C 0x042C   /* ь */
-        &uc 0x0431 0x0411   /* б */
-        &uc 0x044E 0x042E   /* ю */
-        &uc 0x002E 0x002C   /* . , */
-        &trans
-        
-        &trans &mo 2 &alt_delete LALT DELETE &layer_two_backspace 1 BACKSPACE
-        &shift_space LSHIFT SPACE &kp LEFT_GUI &kp LA(F4)
-        &tog 3 &kp ENTER &kp TAB &kp RIGHT_SHIFT &kp DELETE
-            >;
         };
     };
 };
