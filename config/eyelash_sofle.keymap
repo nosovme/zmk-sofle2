@@ -7,6 +7,12 @@
 
 #include <input/processors.dtsi>
 
+#include <behaviors/unicode.dtsi>
+
+&uc {
+  default-mode = <UC_MODE_LINUX>;
+};
+
 /*
 
    &mmv_input_listener {
@@ -100,7 +106,7 @@
 &kp LC(Q)      &kp LC(W)        &kp ESC      &kp LC(LS(TAB))     &kp LC(TAB)        &kp LC(T)           &trans   &trans        &kp HOME         &kp UP      &kp END   &kp MINUS         &kp EQUAL
 &trans      &kp LC(A)     &kp LA(V)     &kp LCTRL        &kp LSHFT         &trans           &trans   &trans        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &kp LC(LS(Z)) &kp LC(Z)     &kp LC(C)       &kp LC(X)       &kp LC(V)         &kp LC(SLASH)             &trans  &rgb_ug RGB_BRI  &kp PG_UP         &kp INSERT  &kp PG_DN    &kp BACKSLASH           &trans
-&trans  &trans           &trans          &trans          &trans           &kp LA(F4)            &trans        &trans           &trans           &trans      &trans     &trans
+&trans  &trans           &uc 0x0430 0x0410          &uc 0x0431 0x0411          &trans           &kp LA(F4)            &trans        &trans           &trans           &trans      &trans     &trans
             >;
  
             display-name = "layer1";
