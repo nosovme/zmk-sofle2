@@ -42,7 +42,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <120>;
             flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp &kp>;
         };
 
         layer_two_backspace: layer_two_backspace {
@@ -91,11 +91,11 @@
 
         layer0 {
             bindings = <
-&kp GRAVE     &trans     &trans        &trans        &trans  &trans       &kp LA(F4)     &trans     &trans     &trans     &trans           &trans      &trans
+&kp GRAVE     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp LA(F4)     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &trans
 &trans    &kp Q      &kp W         &kp E         &kp R   &kp T        &kp LA(F4)   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp LEFT_BRACKET
 &kp LSHFT    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LA(F4)   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
 &kp LCTRL   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp LA(F4)  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &trans
-&trans  &mo 2  &alt_delete LALT DELETE  &layer_two_backspace 1 BACKSPACE   &shift_space LSHIFT SPACE  &kp LEFT_GUI    &kp LA(F4)  &lang_switch_ctrl LC(SEMI) LG(SPACE)  &layer_two_backspace 3 ENTER  &kp TAB      &kp RIGHT_SHIFT  &kp DELETE
+&trans  &mo 2  &alt_delete LALT DELETE  &layer_two_backspace 1 BACKSPACE   &shift_space LSHIFT SPACE  &kp LEFT_GUI    &kp LA(F4)  &lang_switch_ctrl LC(SEMI) LG(SPACE)  &layer_three_enter 3 ENTER  &kp TAB      &kp RIGHT_SHIFT  &kp DELETE
             >; 
         
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -105,9 +105,9 @@
         layer_1 {
             bindings = <
 &trans    &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &trans     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&kp LC(Q)      &kp LC(W)        &kp ESC      &kp LC(LS(TAB))     &kp LC(TAB)        &kp LC(T)           &trans   &trans        &kp PG_UP         &kp UP      &kp PG_DN   &trans         &trans
-&trans      &kp LC(A)     &kp LA(V)     &kp LCTRL        &kp LSHFT         &trans           &trans   &trans        &kp LEFT         &kp DOWN    &kp RIGHT   &trans  &trans
-&kp LC(LS(Z)) &kp LC(Z)     &kp LC(C)       &kp LC(X)       &kp LC(V)         &kp LC(SLASH)             &trans  &trans  &kp HOME         &trans  &kp END    &trans           &trans
+&kp LC(Q)      &kp LC(W)        &kp ESC      &kp LC(LS(TAB))     &kp LC(TAB)        &kp LC(T)           &trans   &trans        &kp PG_UP         &kp UP      &kp PG_DN   &kp MINUS         &kp EQUAL
+&trans      &kp LC(A)     &kp LA(V)     &kp LCTRL        &kp LSHFT         &trans           &trans   &trans        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp LC(LS(Z)) &kp LC(Z)     &kp LC(C)       &kp LC(X)       &kp LC(V)         &kp LC(SLASH)             &trans  &trans  &kp HOME         &kp trans  &kp END    &kp BACKSLASH           &trans
 &trans  &trans           &trans          &trans          &trans           &kp LA(F4)            &trans        &trans           &trans           &trans      &trans     &trans
             >;
  
@@ -127,17 +127,17 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-    layer_3 {
-       bindings = <
-           &trans  &trans    &trans    &trans    &trans    &trans     &trans  &trans    &trans   &trans   &trans   &trans   &trans
-           &trans  &kp EXCL  &kp AT     &kp HASH  &kp DLLR   &kp PRCNT  &trans  &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &trans
-           &trans  &kp N1    &kp N2     &kp N3    &kp N4     &kp N5     &trans  &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &trans
-           &trans  &kp LBKT  &kp RBKT   &kp LBRC  &kp RBRC   &kp UNDER  &trans  &kp PLUS  &kp MINUS &kp EQUAL &kp BSLH &kp PIPE &trans
-           &trans  &trans    &trans     &trans    &trans     &trans     &trans  &trans    &trans   &trans   &trans   &trans
-       >;
-   
-       display-name = "layer3";
-       sensor-bindings = <&scroll_encoder>;
-   };
+        layer_3 {
+            bindings = <
+&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT  &trans  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &trans
+&trans    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5     &trans  &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
+&trans    &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC  &kp UNDER  &trans  &kp PLUS   &kp MINUS  &kp EQUAL  &kp BSLH  &kp PIPE  &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+            >;
+
+            display-name = "layer3";
+            sensor-bindings = <&scroll_encoder>;
+        };
     };
 };
