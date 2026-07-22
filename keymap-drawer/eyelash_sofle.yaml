@@ -17,13 +17,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Q
   - W
-  - E
+  - EXECUTE
   - R
-  - T
+  - HELP
   - Alt+F4
   - Y
   - U
-  - I
+  - MENU
   - O
   - P
   - {t: '[', s: '{'}
@@ -35,20 +35,20 @@ layers:
   - G
   - Alt+F4
   - H
-  - J
+  - SELECT
   - K
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
-  - X
+  - STOP
   - C
   - V
-  - B
+  - AGAIN
   - Alt+F4
   - N
-  - M
+  - UNDO
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
