@@ -51,8 +51,8 @@ layers:
   - M
   - INT5
   - INT1
+  - {t: ., s: '>'}
   - KP LPAR
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '2'
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-option$$'}
@@ -244,9 +244,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: \, s: '|'}
   - {t: /, s: '?'}
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
   - _
+  - {t: ',', s: <}
+  - '?'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
