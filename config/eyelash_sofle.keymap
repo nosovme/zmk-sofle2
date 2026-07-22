@@ -97,7 +97,6 @@
          &kp LCTRL     &kp Z      &kp K_STOP    &kp C         &kp V   &kp K_AGAIN  &kp LA(F4)     &kp N      &kp K_UNDO &kp COMMA  &kp DOT          &kp FSLH    &trans
          &trans        &mo 2      &alt_delete LALT DELETE     &layer_two_backspace 1 BACKSPACE     &shift_space LSHIFT SPACE          &kp LEFT_GUI    &kp LA(F4)  &lang_switch_ctrl LC(SEMI) LG(SPACE)  &layer_three_enter 3 ENTER  &kp TAB  &kp RIGHT_SHIFT  &kp DELETE
              >;
-         };
         
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "LAYER0";
