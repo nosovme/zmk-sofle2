@@ -49,10 +49,10 @@ layers:
   - Alt+F4
   - N
   - M
-  - {t: ',', s: <}
   - INT5
   - INT1
   - KP LPAR
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '2'
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-option$$'}
