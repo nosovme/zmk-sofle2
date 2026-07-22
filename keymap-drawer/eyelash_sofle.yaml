@@ -2,17 +2,17 @@ layout: {zmk_keyboard: eyelash_sofle}
 layers:
   LAYER0:
   - {t: '`', s: '~'}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Alt+F4
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Q
@@ -87,11 +87,11 @@ layers:
   - Ctl+T
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - HOME
+  - PG UP
   - $$mdi:arrow-up-bold$$
-  - END
-  - {t: '-', s: _}
-  - {t: '=', s: +}
+  - PG DN
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+A
   - Alt+V
@@ -103,8 +103,8 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Sft+Z
   - Ctl+Z
   - Ctl+C
@@ -112,11 +112,11 @@ layers:
   - Ctl+V
   - {t: Ctl+/, s: 'Ctl+?'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB BRI
-  - PG UP
-  - Ins
-  - PG DN
-  - {t: \, s: '|'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
+  - {t: '$$mdi:transfer$$', type: trans}
+  - END
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
