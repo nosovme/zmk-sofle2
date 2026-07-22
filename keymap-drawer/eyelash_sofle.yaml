@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
   LAYER0:
-  - {t: '`', s: '~'}
+  - INT4
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -26,7 +26,7 @@ layers:
   - MENU
   - O
   - P
-  - {t: '[', s: '{'}
+  - INT6
   - $$mdi:apple-keyboard-shift$$
   - A
   - S
@@ -38,8 +38,8 @@ layers:
   - SELECT
   - K
   - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - INT3
+  - INT2
   - $$mdi:apple-keyboard-control$$
   - Z
   - STOP
@@ -50,9 +50,9 @@ layers:
   - N
   - UNDO
   - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - INT5
+  - INT1
+  - KP LPAR
   - {t: '$$mdi:transfer$$', type: trans}
   - '2'
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-option$$'}
@@ -197,11 +197,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   layer3:
   - {t: '$$mdi:transfer$$', type: trans}
-  - INT1
-  - INT2
-  - INT3
-  - INT4
-  - INT5
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
