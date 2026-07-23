@@ -141,7 +141,7 @@
 &none          &none        &none       &none       &none       &none       &none   &none             &none             &none             &none     &none      &none
 &kp LBKT       &kp RBKT     &kp LBRC    &kp RBRC    &kp LT      &kp GT      &none   &kp EQUAL         &kp PLUS         &kp ASTRK        &kp AMPS  &kp PIPE   &kp BSLH
 &kp SEMI       &kp COLON    &kp LPAR    &kp RPAR    &kp MINUS   &kp UNDER   &none   &kp DLLR          &kp QUESTION     &kp EXCLAMATION  &kp DQT   &kp SQT    &kp FSLH
-&kp KP_LPAR    &kp GRAVE    &kp TILDE   &kp AT      &kp HASH    &kp PRCNT   &none   &kp CARET         &none             &none             &none     &trans     &trans
+&kp KP_LPAR    &kp GRAVE    &kp TILDE   &kp AT      &kp HASH    &kp PRCNT   &none   &kp CARET         &kp LA(SPACE)     &none             &none     &trans     &trans
 &trans         &trans       &trans      &trans      &trans      &trans      &trans  &trans            &trans            &trans            &trans    &trans
             >;
 
