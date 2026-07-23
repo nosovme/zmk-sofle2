@@ -91,8 +91,8 @@
 
          layer0 {
              bindings = <
-         &kp INT4      &trans     &trans        &trans        &trans  &trans       &trans     &trans     &trans     &trans     &trans           &trans      &trans
-         &trans    &kp Q      &kp W         &kp E         &kp R   &kp T        &trans   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp INT6
+         &trans      &trans     &trans        &trans        &trans  &trans       &trans     &trans     &trans     &trans     &trans           &trans      &trans
+         &kp INT4    &kp Q      &kp W         &kp E         &kp R   &kp T        &trans   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp INT6
          &kp LSHFT    &kp A      &kp S         &kp D         &kp F   &kp G        &trans   &kp H      &kp J      &kp K      &kp L             &kp INT3    &kp INT2
          &kp LCTRL   &kp Z      &kp X         &kp C         &kp V   &kp B        &trans  &kp N      &kp M     &kp INT5          &kp INT1    &kp DOT   &kp KP_LPAR   
          &trans        &mo 2      &alt_delete LALT DELETE     &layer_two_backspace 1 BACKSPACE     &shift_space LSHIFT SPACE          &kp LEFT_GUI    &kp LA(F4)  &lang_switch_ctrl LC(SEMI) LG(SPACE)  &layer_three_enter 3 ENTER  &kp TAB  &kp RIGHT_SHIFT  &kp DELETE
