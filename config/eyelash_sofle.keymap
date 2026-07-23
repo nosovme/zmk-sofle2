@@ -76,6 +76,14 @@
             flavor = "balanced";
             bindings = <&mo &kp>;
         };
+
+        layer_four_tab: layer_four_tab {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <120>;
+            flavor = "balanced";
+            bindings = <&mo &kp>;
+        };
     };
 
     scroll_encoder: scroll_encoder {
@@ -94,8 +102,8 @@
          &trans      &trans     &trans        &trans        &trans  &trans       &trans     &trans     &trans     &trans     &trans           &trans      &trans
          &kp INT4    &kp Q      &kp W         &kp E         &kp R   &kp T        &trans   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp INT6
          &kp LSHFT    &kp A      &kp S         &kp D         &kp F   &kp G        &trans   &kp H      &kp J      &kp K      &kp L             &kp INT3    &kp INT2
-         &kp LCTRL   &kp Z      &kp X         &kp C         &kp V   &kp B        &trans  &kp N      &kp M     &kp INT5          &kp INT1    &kp DOT   &kp KP_LPAR   
-         &trans        &mo 2      &alt_delete LALT DELETE     &layer_two_backspace 1 BACKSPACE     &shift_space LSHIFT SPACE          &kp LEFT_GUI    &kp LA(F4)  &lang_switch_ctrl LC(SEMI) LG(SPACE)  &layer_three_enter 3 ENTER  &kp TAB  &kp RIGHT_SHIFT  &kp DELETE
+         &kp LCTRL   &kp Z      &kp X         &kp C         &kp V   &kp B        &trans  &kp N      &kp M     &kp INT5          &kp INT1    &kp DOT    &kp COMMA  
+         &trans        &mo 2      &alt_delete LALT DELETE     &layer_two_backspace 1 BACKSPACE     &shift_space LSHIFT SPACE          &kp LEFT_GUI    &kp LA(F4)  &lang_switch_ctrl LC(SEMI) LG(SPACE)  &layer_three_enter 3 ENTER  &layer_four_tab 4 TAB  &kp RIGHT_SHIFT  &kp DELETE
              >;
         
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -129,14 +137,27 @@
 
         layer_3 {
             bindings = <
-&trans    &trans     &trans     &trans     &trans     &trans    &trans  &trans    &trans     &trans     &trans    &trans    &trans
-&trans    &kp GRAVE  &kp SEMI   &kp SQT    &kp COMMA  &kp DOT   &trans  &kp FSLH  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp EXCLAMATION
-&trans    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5    &trans  &kp N6    &kp N7     &kp N8     &kp N9    &kp N0    &kp QUESTION
-&trans    &kp DLLR   &kp SEMI   &kp COLON  &kp SQT    &kp DQT   &trans  &kp BSLH  &kp FSLH   &kp UNDER  &kp COMMA &kp DOT &trans
-&trans    &trans     &trans     &trans     &trans     &trans    &trans  &trans    &trans     &trans     &trans    &trans
+&none          &none        &none       &none       &none       &none       &none   &none             &none             &none             &none     &none      &none
+&kp LBKT       &kp RBKT     &kp LBRC    &kp RBRC    &kp LT      &kp GT      &none   &kp EQUAL         &kp PLUS         &kp ASTRK        &kp AMPS  &kp PIPE   &kp BSLH
+&kp SEMI       &kp COLON    &kp LPAR    &kp RPAR    &kp MINUS   &kp UNDER   &none   &kp DLLR          &kp QUESTION     &kp EXCLAMATION  &kp DQT   &kp SQT    &kp FSLH
+&kp KP_LPAR    &kp GRAVE    &kp TILDE   &kp AT      &kp HASH    &kp PRCNT   &none   &kp CARET         &none             &none             &none     &trans     &trans
+&trans         &trans       &trans      &trans      &trans      &trans      &trans  &trans            &trans            &trans            &trans    &trans
             >;
 
             display-name = "layer3";
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_4 {
+            bindings = <
+&none     &none     &none     &none     &none     &none     &none   &none     &none     &none     &none     &none     &none
+&none     &none     &none     &none     &none     &none     &none   &none     &none     &none     &none     &none     &none
+&none     &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &none   &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &none
+&none     &none     &none     &none     &none     &none     &none   &none     &none     &none     &none     &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans  &trans    &trans    &trans    &trans    &trans
+            >;
+
+            display-name = "layer4";
             sensor-bindings = <&scroll_encoder>;
         };
     };
