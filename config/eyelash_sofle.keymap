@@ -53,14 +53,6 @@
             bindings = <&mo &kp>;
         };
 
-        lang_switch_ctrl: lang_switch_ctrl {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <120>;
-            flavor = "balanced";
-            bindings = <&kp &kp>;
-        };
-
         alt_delete: alt_delete {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -103,7 +95,7 @@
          &kp INT4    &kp Q      &kp W         &kp E         &kp R   &kp T        &trans   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp INT6
          &kp LSHFT    &kp A      &kp S         &kp D         &kp F   &kp G        &trans   &kp H      &kp J      &kp K      &kp L             &kp INT3    &kp INT2
          &kp LCTRL   &kp Z      &kp X         &kp C         &kp V   &kp B        &trans  &kp N      &kp M     &kp INT5          &kp INT1    &kp DOT    &kp COMMA  
-         &trans      &mo 2      &alt_delete LALT DELETE     &layer_two_backspace 1 BACKSPACE     &shift_space LSHIFT SPACE          &kp LEFT_GUI    &kp LA(F4)  &lang_switch_ctrl LC(SEMI) LG(SPACE)  &layer_three_enter 3 ENTER  &layer_four_tab 4 TAB  &kp RIGHT_SHIFT  &kp DELETE
+         &trans      &mo 2      &alt_delete LALT DELETE     &layer_two_backspace 1 BACKSPACE     &shift_space LSHIFT SPACE          &kp LEFT_GUI    &kp LA(F4)  &kp CAPS  &layer_three_enter 3 ENTER  &layer_four_tab 4 TAB  &kp RIGHT_SHIFT  &kp DELETE
              >;
         
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
